@@ -6,7 +6,7 @@ pipeline = joblib.load('churn_pipeline.joblib')
 
 st.title("Customer Churn Predictor")
 
-tenure = st.slider("Tenure (months)", 0.72, 12)
+tenure = st.slider("Tenure (months)", 0, 72, 12)
 monthly_charges = st.slider("Monthly charges ($)", 18.0, 120.0, 65,0)
 contract = st.selectbox("Contract", ["Month-to-month", "One year", "Two year"])
 internet_service = st.selectbox("Internet service", ["DSL", "Fiber optic", "No"])
